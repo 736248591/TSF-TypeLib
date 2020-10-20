@@ -75,6 +75,8 @@ namespace TSF.InteropTypes
           return "TF_E_SYNCHRONOUS";
         case ManagerReturnValues.TF_S_ASYNC:
           return "TF_S_ASYNC";
+        case ManagerReturnValues.TF_E_INVALIDARG:
+            return "TF_E_INVALIDARG";
         default:
           return "Unknown Error";
       }

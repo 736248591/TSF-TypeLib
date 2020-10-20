@@ -909,7 +909,7 @@ namespace TSF.TypeLib
     [PreserveSig]
     HRESULT InWriteSession([In] TfClientId tid, [Out, MarshalAs(UnmanagedType.Bool)] out bool pfWriteSession);
     [PreserveSig]
-    HRESULT GetSelection([In] TfEditCookie ec, [In] uint ulIndex, [In] uint ulCount, [Out] TF_SELECTION[] pSelection, [NullAllowed] out uint pcFetched);
+    HRESULT GetSelection([In] TfEditCookie ec, [In] uint ulIndex, [In] uint ulCount, [Out, MarshalAs(UnmanagedType.LPArray)] TF_SELECTION[] pSelection, [NullAllowed] out uint pcFetched);
     [PreserveSig]
     HRESULT SetSelection([In] TfEditCookie ec, [In] uint ulCount, [In] ref TF_SELECTION pSelection);
     [PreserveSig]

@@ -27,7 +27,8 @@ namespace TSF.TypeLib
     TF_E_STACKFULL = unchecked((int)0x80040501),
     TF_E_SYNCHRONOUS = unchecked((int)0x80040208),
     TF_S_ASYNC = unchecked((int)0x00040300),
-  }
+    TF_E_INVALIDARG = unchecked((int)0x80070057),
+    }
 
   public enum TKB_ALTERNATES : uint
   {
