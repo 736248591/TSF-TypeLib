@@ -13,6 +13,11 @@ Type Library of Text Services Framework for .NET
 
 # 修复
 
+## 2020年11月3日
+
+- 添加`TF_DEFAULT`和`TS_DEFAULT`的定义。修改`GetSelection`函数。
+- 解决ManagerReturnValues中的错误代码与COMException中错误代码冲突的问题。
+
 ## 2020年10月20日
 
 - ITfContext.GetSelection 产生System.StackOverflowException
