@@ -13,6 +13,10 @@ Type Library of Text Services Framework for .NET
 
 # 修复
 
+## 2020年11月6日
+
+- hresult的错误还是可选的处理。之前修正“解决ManagerReturnValues中的错误代码与COMException中错误代码冲突的问题。”的时候引入的BUG，造成了`Marshal.GetExceptionForHR`的错误直接抛出的问题。
+
 ## 2020年11月3日
 
 - 添加`TF_DEFAULT`和`TS_DEFAULT`的定义。修改`GetSelection`函数。

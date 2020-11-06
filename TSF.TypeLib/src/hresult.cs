@@ -75,7 +75,7 @@ namespace TSF.InteropTypes
                 default:
                     var e = Marshal.GetExceptionForHR(Code);
                     if (e != null)
-                        throw e;
+                        return e.ToString();
                     else
                         return "Unknown Error";
             }
