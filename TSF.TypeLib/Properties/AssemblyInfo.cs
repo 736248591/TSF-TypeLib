@@ -5,11 +5,11 @@ using System.Reflection;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TSF.TypeLib")]
-[assembly: AssemblyDescription("Type Library of Text Services Framework for .NET")]
+[assembly: AssemblyDescription("Type Library for Text Services Framework (TSF).输入法开发TSF框架的C#库（持续更新）。")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("TSF.TypeLib")]
-[assembly: AssemblyCopyright("Copyright © Yohei Yukawa a.k.a. NyaRuRu 2013")]
+[assembly: AssemblyCopyright("Copyright © Yohei Yukawa a.k.a. NyaRuRu 2013 nayaku 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: NeutralResourcesLanguage("en")]

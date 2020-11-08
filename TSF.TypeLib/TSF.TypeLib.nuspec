@@ -1,29 +1,28 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>TSF.TypeLib.Update</id>
     <version>$version$</version>
     <title>TSF.TypeLib</title>
-    <authors>NyaRuRu</authors>
-    <owners>NyaRuRu</owners>
+    <authors>NyaRuRu nayaku</authors>
+    <owners>NyaRuRu nayaku</owners>
     <description>
-      Type Library for Text Services Framework (TSF).
+      $description$
     </description>
     <releaseNotes>
     </releaseNotes>
     <summary>
-      Type Library for Text Services Framework (TSF).
+		$description$
     </summary>
     <language>en-US</language>
-    <projectUrl>https://github.com/NyaRuRu/TSF-TypeLib</projectUrl>
+    <projectUrl>https://github.com/736248591/TSF-TypeLib</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
-    <copyright>Copyright © Yohei Yukawa a.k.a. NyaRuRu 2013</copyright>
+    <license type="expression">MIT</license>
+    <copyright>$copyright$</copyright>
     <references></references>
     <tags>COM TypeLib TSF</tags>
   </metadata>
   <files>
     <file src="bin\Release\*" target="lib\portable-windows8+net45" />
-    <file src="content\*" target="content" />
   </files>
 </package>
