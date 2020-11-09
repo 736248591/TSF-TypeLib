@@ -1,6 +1,8 @@
 TSF-TypeLib
 ===========
 
+[![MIT](https://img.shields.io/github/license/736248591/TSF-TypeLib)](LICENSE) [![NuGet](https://img.shields.io/nuget/dt/TSF.TypeLib.Update)](https://www.nuget.org/packages/TSF.TypeLib.Update) ![GitHub](https://img.shields.io/github/issues/736248591/TSF-TypeLib) ![GitHub](https://img.shields.io/github/stars/736248591/TSF-TypeLib?style=social) ![GitHub](https://img.shields.io/github/watchers/736248591/TSF-TypeLib?style=social) ![NuGet](https://img.shields.io/nuget/v/TSF.TypeLib.Update) ![Github Version](https://img.shields.io/github/v/tag/736248591/TSF-TypeLib)
+
 [原项目](https://github.com/NyaRuRu/TSF-TypeLib)
 
 Type Library of Text Services Framework for .NET
@@ -13,16 +15,9 @@ Type Library of Text Services Framework for .NET
 
 # 修复
 
-## 2020年11月6日
-
+## 1.0.2
 - hresult的错误还是可选的处理。之前修正“解决ManagerReturnValues中的错误代码与COMException中错误代码冲突的问题。”的时候引入的BUG，造成了`Marshal.GetExceptionForHR`的错误直接抛出的问题。
-
-## 2020年11月3日
-
 - 添加`TF_DEFAULT`和`TS_DEFAULT`的定义。修改`GetSelection`函数。
 - 解决ManagerReturnValues中的错误代码与COMException中错误代码冲突的问题。
-
-## 2020年10月20日
-
 - ITfContext.GetSelection 产生System.StackOverflowException
 - 添加ManagerReturnValues.TF_E_INVALIDARG异常类型
