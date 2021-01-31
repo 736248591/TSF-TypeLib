@@ -210,7 +210,7 @@ namespace TSF.TypeLib
         [PreserveSig]
         HRESULT Clone([Out, MarshalAs(UnmanagedType.Interface)] out IEnumTfInputProcessorProfiles ppEnum);
         [PreserveSig]
-        HRESULT Next([In] uint ulCount, [Out] out TF_INPUTPROCESSORPROFILE pProfile, [Out] out uint pcFetch);
+        HRESULT Next([In] uint ulCount, [Out, MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)]TF_INPUTPROCESSORPROFILE[] pProfile, [Out] out uint pcFetch);
         [PreserveSig]
         HRESULT Reset();
         [PreserveSig]
@@ -236,7 +236,7 @@ namespace TSF.TypeLib
         [PreserveSig]
         HRESULT Clone([Out, MarshalAs(UnmanagedType.Interface)] out IEnumTfLanguageProfiles ppEnum);
         [PreserveSig]
-        HRESULT Next([In] uint ulCount, [Out] TF_LANGUAGEPROFILE[] pProfile, IntPtr pcFetch);
+        HRESULT Next([In] uint ulCount, [Out, MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 2)] TF_LANGUAGEPROFILE[] pProfile, out int fetched);
         [PreserveSig]
         HRESULT Reset();
         [PreserveSig]
@@ -1430,7 +1430,7 @@ namespace TSF.TypeLib
         [PreserveSig]
         HRESULT ChangeCurrentLanguage([In] LangID langid);
         [PreserveSig]
-        HRESULT GetLanguageList([Out] IntPtr ppLangId, [Out] out uint pulCount);
+        HRESULT GetLanguageList([Out] out IntPtr ppLangId, [Out] out uint pulCount);
         [PreserveSig]
         HRESULT EnumLanguageProfiles([In] LangID langid, [Out, MarshalAs(UnmanagedType.Interface)] out IEnumTfLanguageProfiles ppEnum);
         [PreserveSig]
@@ -1917,7 +1917,7 @@ namespace TSF.TypeLib
     public interface ITfRange
     {
         [PreserveSig]
-        HRESULT GetText([In] TfEditCookie ec, [In] TF_TF dwFlags, [Out, MarshalAs(UnmanagedType.LPArray, ArraySubType = UnmanagedType.U2, SizeParamIndex = 3)] out char[] pchText, [In] uint cchMax, [Out] out uint pcch);
+        HRESULT GetText([In] TfEditCookie ec, [In] TF_TF dwFlags, [Out, MarshalAs(UnmanagedType.LPArray, ArraySubType = UnmanagedType.U2, SizeParamIndex = 3)] char[] pchText, [In] uint cchMax, [Out] out uint pcch);
         [PreserveSig]
         HRESULT SetText([In] TfEditCookie ec, [In] TF_ST dwFlags, [In, MarshalAs(UnmanagedType.LPArray, ArraySubType = UnmanagedType.U2, SizeParamIndex = 3)] char[] pchText, [In] int cch);
         [PreserveSig]
